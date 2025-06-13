@@ -87,7 +87,7 @@ export default function ContactSection() {
             alt="Contact Illustration"
             fill
             className="object-cover rounded"
-            sizes="(min-width: 786px) 40vw"
+            sizes="(min-width: 788px) 40vw"
             priority
           />
         </div>
@@ -96,7 +96,7 @@ export default function ContactSection() {
         {/* Form kanan */}
         <form
           onSubmit={handleSubmit}
-          className="md:col-span-4 max-w-[690px] space-y-6 bg-white/40 dark:bg-gray-900/70 backdrop-blur-md text-gray-800 dark:text-white p-6 rounded-xl shadow-xl w-full"
+          className="md:col-span-4 max-w-[680px] space-y-6 bg-white/40 dark:bg-gray-900/70 backdrop-blur-md text-gray-800 dark:text-white p-6 rounded-xl shadow-xl w-full"
         >
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
             Contact Me

@@ -10,7 +10,7 @@ const projects = [
     deskripsi: "Dengan mempertimbangkan responstabilitas tinggi dan vitur interaktif text to speach, speach to text dan penggunakan API Userawai untuk membangun vitur disabilitas interaktive.",
     role: "Full Stack Developer",
     frontend: "Laravel, Botstrap CSS, Jquery, JavaScripts",
-    backend: "Python-Flask, MongoDb, API Userawai, API TTS, API STT",
+    backend: "Python-Flask, MongoDb, API Userawai, API TTS-STT",
     images: [
       "/img/projects/1.png",
       "/img/projects/2.png",

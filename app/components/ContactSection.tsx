@@ -87,7 +87,7 @@ export default function ContactSection() {
             alt="Contact Illustration"
             fill
             className="object-cover rounded -ml-8"
-            sizes="(min-width: 950px) 40vw"
+            sizes="(min-width: 650px) 40vw"
             priority
           />
         </div>

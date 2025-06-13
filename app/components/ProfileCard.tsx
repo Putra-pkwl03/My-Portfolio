@@ -45,7 +45,7 @@ export default function ProfileCard() {
 
       </h1>
 
-      <p className="text-[#12ED74]  text-sm mb-4">Full Stack Web Developer</p>
+      <p className="dark:text-[#12ED74] text-gray-600 text-sm font-semibold mb-4">Full Stack Web Developer</p>
 
       {/* Icon Sosial Media */}
       <div className="flex justify-center gap-3 mb-8 text-lg">

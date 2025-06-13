@@ -9,7 +9,7 @@ const projects = [
     title: "E-Learning Pembelajaran Siswa Disabilitas",
     deskripsi: "Dengan mempertimbangkan responstabilitas tinggi dan vitur interaktif text to speach, speach to text dan penggunakan API Userawai untuk membangun vitur disabilitas interaktive.",
     role: "Full Stack Developer",
-    frontend: "View-Laravel, Botstrap CSS, Axios-Jquery, JavaScripts",
+    frontend: "Laravel, Botstrap CSS, Jquery, JavaScripts",
     backend: "Python-Flask, MongoDb, API Userawai, API TTS, API STT",
     images: [
       "/img/projects/1.png",

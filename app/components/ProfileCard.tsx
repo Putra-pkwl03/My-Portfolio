@@ -9,6 +9,8 @@ import {
   FaComments,
 } from "react-icons/fa";
 
+import Image from "next/image";
+
 export default function ProfileCard() {
   const [visible, setVisible] = useState(false);
   const ref = useRef(null);
@@ -29,11 +31,13 @@ export default function ProfileCard() {
         visible ? "animate-slide-in-left-bottom" : "opacity-0"
       }`}
     >
-      <img
-        src="/profile.webp"
-        alt="Profile"
-        className="w-50 h-50 rounded-full mx-auto mb-6 object-cover"
-      />
+     <Image
+  src="/profile.webp"
+  alt="Profile"
+  width={200}
+  height={200}
+  className="w-50 h-50 rounded-full mx-auto mb-6  object-cover"
+/>
       <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
       <span className="typing inline-block">&lt; Ma&apos;ruf Hariam /&gt;</span>
       </h1>

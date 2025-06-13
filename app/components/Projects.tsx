@@ -58,7 +58,7 @@ const projects = [
   },
   {
     title: "Compeny Prifile Cendana Solutions",
-    deskripsi: "Pengambangan Website compeny prifile ini merupakan permintaan client dan saya membangunnya menggunakan Laravel dan bootstrap css kemudian integrasi vitur WA dan optimasi kecepatan dan terakhir melakukan Hosting Ke NiagaHoster",
+    deskripsi: "Pengambangan Website compeny prifile ini merupakan permintaan clien. Terintegrasi vitur WhatsApp, optimasi kecepatan dan hosting NiagaHoster",
     role: "Backend Developer",
     frontend: "View Laravel Blade, Bootstrap",
     backend: "PHP-Laravel,  API Endpoin Git dan Github",

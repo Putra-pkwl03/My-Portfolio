@@ -41,8 +41,9 @@ export default function AboutMeSection() {
       <h2 className="text-2xl md:text-3xl font-bold">
         <span className="text-black dark:text-gray-300">Hello, Saya </span>
         <span className="text-green-600 dark:text-[#12ED74] ">
-        MA&apos;RUF HARIAM
-        </span>
+  {"MA'RUF HARIAM"}
+</span>
+
       </h2>
 
       {/* Deskripsi */}

@@ -39,7 +39,10 @@ export default function ProfileCard() {
   className="w-50 h-50 rounded-full mx-auto mb-6  object-cover"
 />
       <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
-      <span className="typing inline-block">&lt; Ma&apos;ruf Hariam /&gt;</span>
+      <span className="typing inline-block">
+  {"< Ma'ruf Hariam />"}
+</span>
+
       </h1>
 
       <p className="text-[#12ED74]  text-sm mb-4">Full Stack Web Developer</p>

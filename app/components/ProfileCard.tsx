@@ -93,7 +93,7 @@ export default function ProfileCard() {
       <div className="flex w-full gap-4">
         {/* Download CV */}
         <a
-          href="/CV_WebDev.pdf"
+          href="/Maruf-Hariam-cv.pdf"
           download
           className="w-1/2 bg-green-500 dark:bg-gray-700/70 backdrop-blur-md text-white dark:text-gray-300 py-2 rounded-md font-medium text-center flex items-center justify-center gap-2 overflow-hidden transition-all duration-300 cursor-pointer relative group"
         >

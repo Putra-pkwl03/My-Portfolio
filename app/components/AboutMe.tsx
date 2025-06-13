@@ -41,7 +41,7 @@ export default function AboutMeSection() {
       <h2 className="text-2xl md:text-3xl font-bold">
         <span className="text-black dark:text-gray-300">Hello, Saya </span>
         <span className="text-green-600 dark:text-[#12ED74] ">
-          MA'RUF HARIAM
+        MA&apos;RUF HARIAM
         </span>
       </h2>
 
@@ -66,7 +66,7 @@ export default function AboutMeSection() {
         Saya juga terbiasa mengembangkan dan mengintegrasikan sisi frontend,
         sehingga memahami alur kerja sistem secara menyeluruh. Praktik kerja
         saya mencakup penggunaan version control, dokumentasi yang baik, dan
-        otomasi dalam proses deployment. Saya percaya bahwa teknologi bukan hanya soal alat, tapi tentang menciptakan solusi nyata yang bermanfaat.
+        otomasi dalam proses deployment. {`Saya percaya bahwa teknologi bukan hanya soal alat, tapi tentang menciptakan solusi nyata yang bermanfaat.`}
         Saya juga terus terbuka untuk belajar hal-hal baru, baik secara teknis
         maupun dalam pengembangan soft skill.
       </p>

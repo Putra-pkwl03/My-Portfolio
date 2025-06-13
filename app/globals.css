@@ -204,8 +204,8 @@ html {
 
 .animated-border {
   position: relative;
-  width: 194px;
-  height: 194px;
+  width: 192px;
+  height: 192px;
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -216,8 +216,8 @@ html {
   content: '';
   position: absolute;
   inset: -4px;
-  border-radius: 999px;
-  border: 2px solid #22c55e;
+  border-radius: 9999px;
+  border: 3px solid #22c55e;
   animation: border-rotate-color 3s linear infinite;
 }
 

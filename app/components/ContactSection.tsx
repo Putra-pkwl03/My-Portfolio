@@ -23,7 +23,7 @@ export default function ContactSection() {
       <div className="flex sm:hidden items-start">
         {/* Gambar kiri */}
 
-        <div className="relative w-full h-[350px] rounded overflow-hidden -mt-12 -ml-30">
+        <div className="relative w-full h-[350px] rounded overflow-hidden -mt-12 -ml-18">
   <Image
     src="/img/assets/c1.webp"
     alt="Contact Illustration"
@@ -34,12 +34,10 @@ export default function ContactSection() {
   />
 </div>
 
-
-
         {/* Form kanan */}
         <form
           onSubmit={handleSubmit}
-          className="w-2/2 space-y-3 bg-white/40 dark:bg-gray-900/70 backdrop-blur-md text-gray-800 dark:text-white p-4 rounded-xl shadow-md mt-23 -ml-30"
+          className="w-2/2 space-y-3 bg-white/40 dark:bg-gray-900/70 backdrop-blur-md text-gray-800 dark:text-white p-4 rounded-xl shadow-md mt-23 -ml-18"
         >
           <h2 className="text-lg font-bold">Contact Me</h2>
 

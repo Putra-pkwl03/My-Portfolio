@@ -86,7 +86,7 @@ export default function ContactSection() {
             src="/img/assets/c1.webp"
             alt="Contact Illustration"
             fill
-            className="object-cover rounded -ml-8"
+            className="object-cover rounded "
             sizes="(min-width: 650px) 40vw"
             priority
           />

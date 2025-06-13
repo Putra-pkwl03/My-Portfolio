@@ -67,7 +67,7 @@ export default function AboutMeSection() {
         Saya juga terbiasa mengembangkan dan mengintegrasikan sisi frontend,
         sehingga memahami alur kerja sistem secara menyeluruh. Praktik kerja
         saya mencakup penggunaan version control, dokumentasi yang baik, dan
-        otomasi dalam proses deployment. {`Saya percaya bahwa teknologi bukan hanya soal alat, tapi tentang menciptakan solusi nyata yang bermanfaat.`}
+        otomasi dalam proses deployment. Saya percaya bahwa teknologi bukan hanya soal alat, tapi tentang menciptakan solusi nyata yang bermanfaat.
         Saya juga terus terbuka untuk belajar hal-hal baru, baik secara teknis
         maupun dalam pengembangan soft skill.
       </p>

@@ -192,6 +192,36 @@ html {
   animation: slide-in-left-bottom 1s ease-out forwards;
 }
 
+
+@keyframes border-rotate-color {
+  0%   { border-color: #22c55e; }  
+  10%  { border-color: #4ade80; }  
+  20%  { border-color: #8dff96; }  
+  30%  { border-color: #b6f7ce; }   
+  40%  { border-color: #b6facf; }  
+  50%  { border-color: #8fc7a4; }   
+}
+
+.animated-border {
+  position: relative;
+  width: 194px;
+  height: 194px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animated-border::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 999px;
+  border: 2px solid #22c55e;
+  animation: border-rotate-color 3s linear infinite;
+}
+
+
 /* about card animations */
 @keyframes slide-in-right-bottom {
   0% {

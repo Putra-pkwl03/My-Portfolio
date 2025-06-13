@@ -31,13 +31,16 @@ export default function ProfileCard() {
         visible ? "animate-slide-in-left-bottom" : "opacity-0"
       }`}
     >
-     <Image
-  src="/profile.webp"
-  alt="Profile"
-  width={200}
-  height={200}
-  className="w-50 h-50 rounded-full mx-auto mb-6  object-cover"
-/>
+<div className="animated-border mx-auto mb-6">
+  <Image
+    src="/profile.webp"
+    alt="Profile"
+    width={200}
+    height={200}
+    className="rounded-full object-cover w-[200px] h-[200px]"
+  />
+</div>
+
       <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
       <span className="typing inline-block">
   {"< Ma'ruf Hariam />"}
@@ -45,7 +48,7 @@ export default function ProfileCard() {
 
       </h1>
 
-      <p className="dark:text-[#12ED74] text-gray-600 text-sm font-semibold mb-4">Full Stack Web Developer</p>
+      <p className="dark:text-[#12ED74] text-gray-500 text-sm font-semibold mb-4">Full Stack Web Developer</p>
 
       {/* Icon Sosial Media */}
       <div className="flex justify-center gap-3 mb-8 text-lg">

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import Image from "next/image";
 export default function ContactSection() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -23,11 +23,17 @@ export default function ContactSection() {
       <div className="flex sm:hidden items-start">
         {/* Gambar kiri */}
 
-          <img
-            src="/img/assets/c1.webp"
-            alt="Contact Illustration"
-            className="w-full h-[350px] object-cover rounded -mt-12 -ml-30"
-          />
+        <div className="relative w-full h-[350px] rounded overflow-hidden -mt-12 -ml-30">
+  <Image
+    src="/img/assets/c1.webp"
+    alt="Contact Illustration"
+    fill
+    className="object-cover rounded"
+    sizes="(max-width: 640px) 100vw"
+    priority
+  />
+</div>
+
 
 
         {/* Form kanan */}
@@ -77,11 +83,16 @@ export default function ContactSection() {
       <div className="hidden md:grid md:grid-cols-6 gap-12 items-center">
         {/* Gambar kiri */}
         <div className="md:col-span-2 flex justify-start">
-          <img
+        <div className="relative w-full h-[570px] rounded overflow-hidden">
+          <Image
             src="/img/assets/c1.webp"
             alt="Contact Illustration"
-            className="w-full h-[570px] object-cover rounded"
+            fill
+            className="object-cover rounded"
+            sizes="(min-width: 768px) 40vw"
+            priority
           />
+        </div>
         </div>
 
         {/* Form kanan */}

@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import CertificationCards from '../components/CertificationCards'; 
+import Image from "next/image";
 
 
 interface ExperienceItem {
@@ -77,18 +78,26 @@ const ExperienceSection = () => {
             </div>
 
             {/* Gambar utama */}
-            <img
+            <div className="relative w-full max-w-[480x] h-[480px]">
+            <Image
               src="/img/assets/dev.png"
               alt="Developer Illustration"
-              className="w-full max-w-[250px] h-120"
+              fill
+              className="object-contain"
+              priority
             />
+      </div>
+
 
             {/* Gambar tambahan kanan bawah */}
-            <img
-              src="/img/assets/a1.png"
-              alt="Second Illustration"
-              className="absolute right-[-18px] -mt-55 w-[240px] h-auto"
-            />
+            <div className="absolute right-[12px] bottom-[70px] w-[180px] h-[120px]">
+          <Image
+            src="/img/assets/a1.png"
+            alt="Second Illustration"
+            fill
+            className="object-contain"
+          />
+        </div>
           </div>
 
           {/* Right Side: Experience List */}

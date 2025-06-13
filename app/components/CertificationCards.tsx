@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 interface CertificationItem {
@@ -165,11 +166,17 @@ const CertificationCards = () => {
                     transition-all duration-300 transform 
                     hover:-translate-y-8 hover:scale-110 hover:z-30 hover:shadow-2xl"
             >
-              <img
+              <div className="relative w-full h-40">
+              <Image
                 src={cert.image}
                 alt={cert.title}
-                className="w-full h-40 object-cover"
+                fill
+                className="object-cover rounded-t-lg"
+                sizes="(max-width: 768px) 100vw, 270px"
+                priority
               />
+            </div>
+
               <div className="p-3 space-y-2">
                 {/* Tanggal & Institusi Sejajar */}
                 <div className="flex justify-between text-xs text-green-700 dark:text-[#12ED74]  font-semibold">
@@ -198,11 +205,16 @@ const CertificationCards = () => {
       transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] hover:z-10 hover:shadow-2xl overflow-hidden"
             >
               {/* gambar diatur agar mengisi penuh lebar card */}
-              <img
+              <div className="relative w-full h-32">
+              <Image
                 src={cert.image}
                 alt={cert.title}
-                className="w-full h-32 object-cover object-center"
+                fill
+                className="object-cover rounded-t-lg"
+                sizes="(max-width: 768px) 100vw, 236px"
+                priority
               />
+            </div>
 
               {/* konten teks */}
               <div className="p-3 space-y-1">

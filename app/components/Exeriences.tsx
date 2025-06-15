@@ -132,11 +132,12 @@ const ExperienceSection = () => {
             ))}
 
             <div className="-mt-6 flex items-center">
-              <a
-                href="/mynewportofolio.pdf"
-                download
-                className="inline-flex items-center gap-1 dark:text-[#12ED74]  text-black font-semibold px-2 py-3 group transition-all duration-300 hover:text-green-600 dark:hover:text-[#12ed75a6]"
-              >
+               <a
+    href="https://drive.google.com/drive/folders/1kX8_QhRLXFFXaT7DlNUCUzo1FgR4pWp1?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-1 dark:text-[#12ED74] text-black font-semibold px-2 py-3 group transition-all duration-300 hover:text-green-600 dark:hover:text-[#12ed75a6]"
+  >
                 View Full Resume
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

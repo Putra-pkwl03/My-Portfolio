@@ -55,7 +55,7 @@ export default function ProfileCard() {
         {[
           {
             icon: <FaGithub className="text-gray-700 dark:text-gray-300 " />,
-            href: "https://github.com/putrapkwl114117/",
+            href: "https://github.com/Putra-pkwl03",
           },
           // { icon: <FaFacebookF className="text-gray-700 dark:text-gray-300 " />, href: "#" },
           {

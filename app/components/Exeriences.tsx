@@ -16,7 +16,7 @@ const experience: ExperienceItem[] = [
   {
     title: "InHack Copetition - Full Stack Developer",
     company: "Telkom Purwokerto",
-    periode: "25-2023",
+    periode: "25-2-2023",
     deskripsi:
       "Membangun Website untuk menyediakan informasi pariwisata yang ramah disabilitas, dengan fitur navigasi suara dan navigasi otomatis yang disesuaikan dengan kebutuhan pengguna disabilitas. Fitur Utama: Navigasi suara dan System Navigasi disabilitas otomatis",
     tech: ["JavaScript", "Vite", "React", "PHP Native", "Bootstrap", "MySql"],
@@ -24,7 +24,7 @@ const experience: ExperienceItem[] = [
   {
     title: "Magang - Staff Web Developmen",
     company: "House Ilmu Indonesia (HI)",
-    periode: "Juli 2024 - Masih Aktif",
+    periode: "Juli 2024 - Juli 2025",
     deskripsi:
       "Memperbarui isi Conten website utama dan membangun Dashboard Internal untuk memanage artcile, dan isi content ke website utama dan di Dashboard Internalnya",
     tech: [
@@ -37,7 +37,7 @@ const experience: ExperienceItem[] = [
   {
     title: "Magang - Full Stack Developer",
     company: "Winni Code Garuda Teknologi",
-    periode: "Februari 2025 - Masih Aktif",
+    periode: "Februari 2025 - Juli 2025",
     deskripsi:
       "Membangun System rekrutmen kariawan baru mulai dari Admin melakukan post lowongan pekerjaan, Users melakukan pendaftaran dilowongan terkiat hingga HR melakukan screening CV hingga memberikan pengumuman akhir lewat Email Notification ",
     tech: [

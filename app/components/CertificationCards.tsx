@@ -20,6 +20,13 @@ const certifications: CertificationItem[] = [
     institution: "Telkom Purwokerto",
   },
   {
+    image: "/img/sertif/win.png",
+    date: "22 Februari 2025",
+    title: "Magang Mandiri Kampus Merdeka",
+    description: "Partisipasi dalam program magang mandiri di PT.Winnicode",
+    institution: "PT.Winnicode Garuda Teknologi",
+  },
+  {
     image: "/img/sertif/2.png",
     date: "Desember 2023",
     title: "Alibaba Cloud Certification",

@@ -27,6 +27,13 @@ const certifications: CertificationItem[] = [
     institution: "PT.Winnicode Garuda Teknologi",
   },
   {
+    image: "/img/sertif/sn8n.jpg",
+    date: "22 Juli 2025",
+    title: "Workflow N8N Course, No Code AI Agent Builder",
+    description: "Menyelesaikan kursus n8n: No Code AI Agent Builder dari Simplilearn SkillUp, pembuatan agen AI tanpa coding menggunakan n8n workflow automation.",
+    institution: "Simplilearn SkillUp",
+  },
+  {
     image: "/img/sertif/2.png",
     date: "Desember 2023",
     title: "Alibaba Cloud Certification",
@@ -89,17 +96,17 @@ const CertificationCards = () => {
 
   return (
     <div className="relative mt-6 ">
-      <div className="hidden md:flex items-center justify-start mt-12 mb-8 relative ml-2 sm:ml-12 md:ml-24">
+      <div className="relative items-center justify-start hidden mt-12 mb-8 ml-2 md:flex sm:ml-12 md:ml-24">
         {/* Lingkaran besar */}
-        <div className="w-40 h-40 rounded-full bg-white/40 dark:bg-white/5  flex flex-col items-center justify-center shadow-2xl backdrop-blur-sm flex-shrink-0">
-          <h2 className="text-xl text-gray-800 dark:text-white font-semibold">
+        <div className="flex flex-col items-center justify-center flex-shrink-0 w-40 h-40 rounded-full shadow-2xl bg-white/40 dark:bg-white/5 backdrop-blur-sm">
+          <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
             Certifications
           </h2>
           <div className="w-20 h-1 bg-green-500 dark:bg-[#12ED74]  mt-2 rounded-full" />
         </div>
 
         {/* Penjelasan singkat di sebelah kanan lingkaran */}
-        <p className="text-sm font-semibold text-gray-800 dark:text-gray-200 text-left mt-2 ml-6 max-w-xl bg-white/40 dark:bg-white/5 b px-4 py-2 rounded-lg shadow-xl backdrop-blur-md inline-block">
+        <p className="inline-block max-w-xl px-4 py-2 mt-2 ml-6 text-sm font-semibold text-left text-gray-800 rounded-lg shadow-xl dark:text-gray-200 bg-white/40 dark:bg-white/5 b backdrop-blur-md">
           Daftar{" "}
           <span className="text-green-800 font-semibold dark:text-[#12ED74] ">
             Sertifikasi
@@ -122,10 +129,10 @@ const CertificationCards = () => {
       </div>
 
       {/* MOBILE version */}
-      <div className="md:hidden w-full flex flex-col items-center justify-center gap-4 px-4 py-6">
+      <div className="flex flex-col items-center justify-center w-full gap-4 px-4 py-6 md:hidden">
         {/* Bulatan */}
-        <div className="w-32 h-32 rounded-full bg-white/40 dark:bg-white/5 flex flex-col items-center justify-center shadow-2xl backdrop-blur-sm">
-          <h2 className="text-base text-gray-800 dark:text-white font-semibold text-center">
+        <div className="flex flex-col items-center justify-center w-32 h-32 rounded-full shadow-2xl bg-white/40 dark:bg-white/5 backdrop-blur-sm">
+          <h2 className="text-base font-semibold text-center text-gray-800 dark:text-white">
             Certifications
           </h2>
           <div className="w-12 h-1 bg-green-500 dark:bg-[#12ED74] mt-2 rounded-full" />
@@ -159,13 +166,12 @@ const CertificationCards = () => {
       <div className="flex items-center justify-center gap-2">
         <div
           onClick={handlePrev}
-          className="bg-white/40 dark:bg-white/10 py-3 px-1 rounded-sm shadow-xl backdrop-blur-md flex items-center justify-center cursor-pointer 
-          hover:bg-white/15 hover:dark:bg-white/20 hover:text-green-700  hover:dark:text-green-700 transition-colors duration-300"
+          className="flex items-center justify-center px-1 py-3 transition-colors duration-300 rounded-sm shadow-xl cursor-pointer bg-white/40 dark:bg-white/10 backdrop-blur-md hover:bg-white/15 hover:dark:bg-white/20 hover:text-green-700 hover:dark:text-green-700"
         >
           <FaChevronLeft size={20} />
         </div>
 
-        <div className="hidden sm:flex bg-white/40 dark:bg-white/5 backdrop-blur-md rounded-xl border border-white/20 shadow-lg py-6 px-4 gap-4">
+        <div className="hidden gap-4 px-4 py-6 border shadow-lg sm:flex bg-white/40 dark:bg-white/5 backdrop-blur-md rounded-xl border-white/20">
           {currentCards.map((cert, index) => (
             <div
               key={index}
@@ -204,7 +210,7 @@ const CertificationCards = () => {
         </div>
 
         {/* mobile version */}
-        <div className="flex sm:hidden w-full overflow-x-auto gap-3 px-2 py-4 bg-white/40 dark:bg-white/5 backdrop-blur-md rounded-xl border border-white/20 shadow-lg scrollbar-thin scrollbar-thumb-green-500">
+        <div className="flex w-full gap-3 px-2 py-4 overflow-x-auto border shadow-lg sm:hidden bg-white/40 dark:bg-white/5 backdrop-blur-md rounded-xl border-white/20 scrollbar-thin scrollbar-thumb-green-500">
           {currentCards.map((cert, index) => (
             <div
               key={index}
@@ -244,15 +250,14 @@ const CertificationCards = () => {
 
         <div
           onClick={handleNext}
-          className="bg-white/40 dark:bg-white/10 py-3 px-1 rounded-sm shadow-sm backdrop-blur-md flex items-center justify-center cursor-pointer 
-                    hover:bg-white/15 hover:dark:bg-white/20 hover:text-green-700  hover:dark:text-green-700 transition-colors duration-300"
+          className="flex items-center justify-center px-1 py-3 transition-colors duration-300 rounded-sm shadow-sm cursor-pointer bg-white/40 dark:bg-white/10 backdrop-blur-md hover:bg-white/15 hover:dark:bg-white/20 hover:text-green-700 hover:dark:text-green-700"
         >
           <FaChevronRight size={20} />
         </div>
       </div>
 
       {/* Slide Indicator */}
-      <div className="flex justify-center mt-4 gap-2">
+      <div className="flex justify-center gap-2 mt-4">
         {Array.from({ length: totalSlides }).map((_, i) => (
           <div
             key={i}

@@ -30,7 +30,7 @@ const certifications: CertificationItem[] = [
     image: "/img/sertif/sn8n.jpg",
     date: "22 Juli 2025",
     title: "Workflow N8N Course, No Code AI Agent Builder",
-    description: "Menyelesaikan kursus n8n: No Code AI Agent Builder dari Simplilearn SkillUp, pembuatan agen AI tanpa coding menggunakan n8n workflow automation.",
+    description: "Menyelesaikan kursus n8n: No Code AI Agent Builder tanpa coding menggunakan n8n workflow automation.",
     institution: "Simplilearn SkillUp",
   },
   {

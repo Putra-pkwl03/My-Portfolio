@@ -108,7 +108,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-6 text-md font-bold text-gray-500 dark:text-gray-300">
+          <div className="items-center hidden gap-6 font-bold text-gray-500 md:flex text-md dark:text-gray-300">
             {["About", "Skills", "Experience", "Projects", "Contact"].map(
               (item) => {
                 const isContact = item === "Contact";
@@ -122,9 +122,9 @@ export default function Navbar() {
                     scroll={false}
                     className={`transition font-bold text-md flex items-center px-3 py-1.5 ${
                       isContact
-                        ? "bg-green-500 dark:bg-[#12ED74] text-white rounded-lg shadow-md hover:bg-green-600 hover:dark:bg-[#12ed75a6]"
+                        ? "bg-green-600 opacity-80 dark:bg-green-700 text-white rounded-lg shadow-md hover:bg-green-700 hover:dark:bg-[#12ed75a6]"
                         : currentSection === item.toLowerCase()
-                        ? "text-green-600 dark:text-[#12ED74]"
+                        ? "text-green-600 dark:text-green-700"
                         : "text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-green-100"
                     }`}
                   >
@@ -145,11 +145,11 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Toggle Button + Theme Toggle */}
-          <div className="md:hidden flex items-center gap-4">
+          <div className="flex items-center gap-4 md:hidden">
             {/* Theme Toggle (di kiri) */}
             <button
               onClick={() => setIsDark(!isDark)}
-              className="text-xl text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-yellow-400 transition"
+              className="text-xl text-gray-600 transition dark:text-gray-300 hover:text-blue-600 dark:hover:text-yellow-400"
               title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
             >
               {isDark ? <FaSun /> : <FaMoon />}
@@ -164,7 +164,7 @@ export default function Navbar() {
 
         {/* Mobile Dropdown Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-xl bg-white dark:bg-gray-800 py-3 px-4 space-y-2 z-40">
+          <div className="absolute left-0 right-0 z-40 px-4 py-3 mx-4 mt-2 space-y-2 bg-white md:hidden top-full rounded-xl dark:bg-gray-800">
             {["About", "Skills", "experience", "Projects", "Contact"].map(
               (item) => {
                 const isContact = item === "Contact";
@@ -181,7 +181,7 @@ export default function Navbar() {
                     scroll={false}
                     className={`transition font-bold text-md flex items-center px-3 py-1.5 rounded-md ${
                       isContact
-                        ? "bg-green-500 dark:bg-[#12ED74] text-white shadow-md hover:bg-green-600 hover:dark:bg-[#12ed75a6]"
+                        ? "bg-green-500 dark:bg-green-700 text-white shadow-md hover:bg-green-600 hover:dark:bg-[#12ed75a6]"
                         : currentSection === item.toLowerCase()
                         ? "text-green-800 dark:text-[#12ED74]"
                         : "text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-green-100"
@@ -205,11 +205,11 @@ export default function Navbar() {
               className="w-32 h-32 mx-auto drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] animate-rocket-shake"
             />
             {/* Api roket */}
-            <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 w-30 h-24 bg-yellow-400 rounded-full blur-2xl animate-flame" />
+            <div className="absolute h-24 -translate-x-1/2 bg-yellow-400 rounded-full -bottom-12 left-1/2 w-30 blur-2xl animate-flame" />
           </div>
 
           {/* Asap besar */}
-          <div className="relative mt-6 flex flex-col items-center space-y-3">
+          <div className="relative flex flex-col items-center mt-6 space-y-3">
             {[...Array(3)].map((_, i) => (
               <div
                 key={i}
@@ -220,7 +220,7 @@ export default function Navbar() {
           </div>
 
           {/* Gumpalan awan */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-3 opacity-80">
+          <div className="absolute bottom-0 flex gap-3 -translate-x-1/2 left-1/2 opacity-80">
             {[...Array(5)].map((_, i) => (
               <div
                 key={i}

@@ -31,7 +31,7 @@ export default function ProfileCard() {
         visible ? "animate-slide-in-left-bottom" : "opacity-0"
       }`}
     >
-<div className="animated-border mx-auto mb-6">
+<div className="mx-auto mb-6 animated-border">
   <Image
     src="/profile.webp"
     alt="Profile"
@@ -42,13 +42,13 @@ export default function ProfileCard() {
 </div>
 
       <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
-      <span className="typing inline-block">
+      <span className="inline-block typing">
   {"< Ma'ruf Hariam />"}
 </span>
 
       </h1>
 
-      <p className="dark:text-[#12ED74] text-gray-500 text-sm font-semibold mb-4">Full Stack Web Developer</p>
+      <p className="mb-4 text-sm font-semibold text-gray-500 dark:text-green-700">Full Stack Web Developer</p>
 
       {/* Icon Sosial Media */}
       <div className="flex justify-center gap-3 mb-8 text-lg">
@@ -79,39 +79,58 @@ export default function ProfileCard() {
         ))}
       </div>
 
-      {/* Hire Me */}
-      <a
-        href="mailto:putrapongkowulu@gmail.com?subject=Hire%20Me&body=Hi%2C%20I%20am%20interested%20in%20hiring%20you..."
-        className="w-fit flex items-center justify-center gap-2 bg-green-500 dark:bg-gray-700/70 backdrop-blur-md overflow-hidden transition-all duration-300 cursor-pointer text-white dark:text-gray-300 px-6 py-2 rounded-lg font-bold mb-8 mx-auto relative group"
-      >
-        <FaEnvelope className="w-5 h-5" />
-        Hire me
-        <span className="absolute inset-0 bg-gradient-to-r from-black/20 via-green/80 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-move blur-sm brightness-125" />
-      </a>
+     {/* Hire Me */}
+<a
+  href="mailto:putrapongkowulu@gmail.com?subject=Hire%20Me&body=Hi%2C%20I%20am%20interested%20in%20hiring%20you..."
+  className="relative flex items-center justify-center gap-2 px-6 py-3 mx-auto mb-8 overflow-hidden font-bold text-white rounded-lg shadow-lg cursor-pointer group w-fit"
+>
+  {/* Layered background effect */}
+  <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform -translate-x-1 -translate-y-1 bg-green-700 rounded-lg dark:bg-green-950 opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+  <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform translate-x-1 translate-y-1 bg-green-500 rounded-lg dark:bg-green-600 opacity-60 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
 
-      {/* Tombol CV dan Contact */}
-      <div className="flex w-full gap-4">
-        {/* Download CV */}
-        <a
-          href="/Maruf-Hariam-cv.pdf"
-          download
-          className="w-1/2 bg-green-500 dark:bg-gray-700/70 backdrop-blur-md text-white dark:text-gray-300 py-2 rounded-md font-medium text-center flex items-center justify-center gap-2 overflow-hidden transition-all duration-300 cursor-pointer relative group"
-        >
-          Download CV <FaFileDownload className="w-4 h-4" />
-          <span className="absolute inset-0 bg-gradient-to-r from-black/20 via-green/80 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-move blur-sm brightness-125" />
-        </a>
+  {/* Text + Icon */}
+  <span className="relative z-10 flex items-center gap-2">
+    <FaEnvelope className="w-5 h-5" /> Hire Me
+  </span>
+</a>
 
-        {/* Contact Me via WhatsApp */}
-        <a
-          href="https://wa.me/6282314969109?text=Hi%2C%20saya%20tertarik%20dengan%20jasa%20Anda"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-1/2 bg-green-500 dark:bg-gray-700/70 backdrop-blur-md text-white dark:text-gray-300 py-2 rounded-md font-medium text-center flex items-center justify-center gap-2 overflow-hidden transition-all duration-300 cursor-pointer relative group"
-        >
-          Contact Me <FaComments className="w-4 h-4" />
-          <span className="absolute inset-0 bg-gradient-to-r from-black/20 via-green/80 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-move blur-sm brightness-125" />
-        </a>
-      </div>
+
+    {/* Tombol CV dan Contact */}
+<div className="flex w-full gap-3">
+  {/* Download CV */}
+  <a
+    href="/MA'RUF HARIAM-CV-20-09-25.pdf"
+    download
+    className="relative flex items-center justify-center w-1/2 gap-2 py-3 overflow-hidden text-white rounded-lg shadow-lg cursor-pointer group"
+  >
+    {/* Layered background effect */}
+    <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform -translate-x-1 -translate-y-1 bg-green-700 rounded-lg dark:bg-green-950 opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+    <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform translate-x-1 translate-y-1 bg-green-500 rounded-lg dark:bg-green-600 opacity-60 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
+
+    {/* Text + Icon */}
+    <span className="relative z-10 flex items-center gap-2">
+      Download CV <FaFileDownload className="w-4 h-4" />
+    </span>
+  </a>
+
+  {/* Contact Me via WhatsApp */}
+  <a
+    href="https://wa.me/6282314969109?text=Hi%2C%20saya%20tertarik%20dengan%20jasa%20Anda"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative flex items-center justify-center w-1/2 gap-2 py-3 overflow-hidden text-white rounded-lg shadow-lg cursor-pointer group"
+  >
+    {/* Layered background effect */}
+    <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform -translate-x-1 -translate-y-1 bg-green-700 rounded-lg dark:bg-green-950 opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+    <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform translate-x-1 translate-y-1 bg-green-500 rounded-lg dark:bg-green-600 opacity-60 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
+
+    {/* Text + Icon */}
+    <span className="relative z-10 flex items-center gap-2">
+      Contact Me <FaComments className="w-4 h-4" />
+    </span>
+  </a>
+</div>
+
     </div>
   );
 }

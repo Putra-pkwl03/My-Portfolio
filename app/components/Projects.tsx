@@ -1,208 +1,196 @@
-'use client';
-import { useState } from 'react';
-import Image from 'next/image';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
+"use client";
+import { useState } from "react";
+import Image from "next/image";
 
 const projects = [
   {
     title: "E-Learning Pembelajaran Siswa Disabilitas",
-    deskripsi: "Dengan mempertimbangkan responstabilitas tinggi dan vitur interaktif text to speach, speach to text dan penggunakan API Userawai untuk membangun vitur disabilitas interaktive.",
+    deskripsi:
+      "Dengan responsivitas tinggi dan fitur interaktif seperti text-to-speech, speech-to-text, serta integrasi API Userawai untuk aksesibilitas pengguna disabilitas.",
     role: "Full Stack Developer",
-    frontend: "Laravel, Botstrap CSS, Jquery, JavaScripts",
-    backend: "Python-Flask, MongoDb, API Userawai, API TTS-STT",
-    images: [
-      "/img/projects/1.png",
-      "/img/projects/2.png",
-      "/img/projects/3.png",
-      "/img/projects/4.png"
-    ]
+    frontend: "Laravel, Bootstrap, jQuery, JavaScript",
+    backend: "Python-Flask, MongoDB, API Userawai, API TTS-STT",
+    images: ["/img/projects/4.png"],
+    url: "https://github.com/Putra-pkwl03/E-Learning_siswa_disabilias.git",
   },
   {
     title: "Website Pariwisata Ramah Disabilitas",
-    deskripsi: "Terdiri dari beberapa vitur diantaranya vitur navigasi suara, vitur navigasi disabilitas otomatis yang di integrasikan sesuai kebutuhan. (kompetisi inhack gdsc telkom purwekerto)",
+    deskripsi:
+      "Fitur navigasi suara dan aksesibilitas otomatis terintegrasi sesuai kebutuhan. (Kompetisi Inhack GDSC Telkom Purwokerto)",
     role: "Full Stack Developer",
-    frontend: "Vite.js, JavaScript, Botstrap CSS",
-    backend: "PHP-Laravel, MySql, API Endpoin, TTS API, STT API",
-    images: [
-      "/img/projects/5.png",
-      "/img/projects/6.png",
-      "/img/projects/7.png"
-    ]
+    frontend: "Vite.js, JavaScript, Bootstrap",
+    backend: "Laravel, MySQL, API Endpoint, TTS API, STT API",
+    images: ["/img/projects/6.png"],
+    url: "https://github.com/Putra-pkwl03/Tectitans.git",
   },
   {
     title: "Prediksi Kesehatan Mental",
-    deskripsi: "Project ini adalah website yang diintegrasikan dengan michine learning untuk memprediksi tingkat stres.dilengkapi dengan vitur ramah disabilitas menggunakan model Logistic Regresi",
+    deskripsi:
+      "Website machine learning untuk memprediksi tingkat stres dengan fitur aksesibilitas dan model Logistic Regression.",
     role: "Backend Developer",
     frontend: "-",
-    backend: "Python-Flask, MySql, API Endpoin, TTS API, Mechine Learning Model Git dan Github",
-    images: [
-      "/img/projects/8.png",
-      "/img/projects/9.png",
-      "/img/projects/10.png",
-      "/img/projects/11.png"
-    ]
+    backend: "Python-Flask, MySQL, API Endpoint, TTS API, ML Model",
+    images: ["/img/projects/8.png"],
+    url: "https://github.com/Putra-pkwl03/Prediction-Mental-Health-Menggunakan-Model-Logistic-Regresi.git"
   },
   {
     title: "Admin Panel With Midtrans",
-    deskripsi: "Website ini dibangun menggunakan Laravel Livewire dengan integrasi Midtrans untuk sistem pembayaran. Paket: MIDTRANS_CLIENTKEY dan MIDTRANS_SERVERKEY untuk autentikasi. MIDTRANS_IS_PRODUCTION, MIDTRANS_IS_SANITIZED, dan MIDTRANS_IS_3DS",
+    deskripsi:
+      "Admin panel dengan integrasi Midtrans untuk sistem pembayaran otomatis.",
     role: "Full Stack Developer",
-    frontend: "View Laravel Blade, Bootstrap",
-    backend: "PHP-Laravel, MySql, API Endpoin",
-    images: [
-      "/img/projects/12.png",
-      "/img/projects/13.png",
-      "/img/projects/14.png",
-      "/img/projects/15.png"
-    ]
+    frontend: "Laravel Blade, Bootstrap",
+    backend: "Laravel, MySQL, API Endpoint",
+    images: ["/img/projects/14.png"],
+    url: "https://github.com/Putra-pkwl03/Midtrans-with-PHP-Laravel.git",
   },
   {
-    title: "Compeny Prifile Cendana Solutions",
-    deskripsi: "Pengambangan Website compeny prifile ini merupakan permintaan clien. Terintegrasi vitur WhatsApp, optimasi kecepatan dan hosting NiagaHoster",
+    title: "Company Profile Cendana Solutions",
+    deskripsi:
+      "Website company profile terintegrasi WhatsApp, optimasi kecepatan, dan hosting di Niagahoster.",
     role: "Backend Developer",
-    frontend: "View Laravel Blade, Bootstrap",
-    backend: "PHP-Laravel,  API Endpoin Git dan Github",
-    images: [
-      "/img/projects/16.png",
-      "/img/projects/17.png",
-      "/img/projects/18.png",
-    ]
+    frontend: "-",
+    backend: "Laravel, API Endpoint",
+    images: ["/img/projects/16.png"],
+    url: "https://cendanasolution.com",
+  },
+  {
+    title: "Tlogo Putri Project Documentasi",
+    deskripsi:
+      "Documentasi RestFull API system Tlogo Putri dengan Postman dan hosting di server VPS.",
+    role: "Backend Developer",
+    frontend: "-",
+    backend: "Laravel, API Endpoint, postman, MySQL, JWT",
+    images: ["/img/projects/p1.jpg"],
+    url: "https://documenter.getpostman.com/view/34659815/2sB2izFESR#2b47e77f-985e-40cc-9e4c-9a6c26f3f2cb",
+  },
+  {
+    title: "Search ENGINE MINI",
+    deskripsi:
+      "membangun mini search engine kesehatan. Menggunakan package Wosh untuk indexing dan similarity search. Integrasi AI Chatbot dari Chatbase.co.",
+    role: "Full Stack Developer",
+    frontend: "React, Next.js, Tailwind CSS, TypeScript",
+    backend: "Laravel, API Endpoint, postman, Wosh, Chatbase.co, MySQL",
+    images: ["/img/projects/p2.jpg"],
+    url: "https://github.com/Putra-pkwl03/Search-Engine-Mini-Be.git",
+  },
+  {
+    title: "EWS Risk Management(PKM)",
+    deskripsi:
+      "Merancang dan membangun sistem Risk Dinas Kesehatan Kabupaten Sleman dengan integrasi JWT autentikasi, notifikasi real-time via Pusher, dan Gmail.",
+    role: "Full Stack Developer",
+    frontend: "React, Next.js, Tailwind CSS, Pusher",
+    backend: "Laravel, API Endpoint, postman, JWT, Pusher, Gmail API, MySQL",
+    images: ["/img/projects/p3.jpg"],
+    url: "https://github.com/Putra-pkwl03/ews-risk-register-be.git",
+  },
+  {
+    title: "Sistem Rekrutmen Karyawan untuk Efisiensi Perekrutan dan Seleksi",
+    deskripsi:
+      "Merancang dan membangun sistem rekrutmen karyawan dengan integrasi JWT autentikasidan Gmail.",
+    role: "Full Stack Developer",
+    frontend: "React, Next.js, Tailwind CSS, TypeScript",
+    backend: "Laravel, API Endpoint, postman, JWT, Gmail API, MySQL",
+    images: ["/img/projects/p4.jpg"],
+    url: "https://github.com/Putra-pkwl03/Recruitment-System-Be.git",
   },
 ];
+export default function ProjectGrid() {
+  const [visibleCount, setVisibleCount] = useState(3); 
 
-export default function ProjectCarousel() {
-  const [projectIndex, setProjectIndex] = useState(0);
-  const [imageIndex, setImageIndex] = useState(0);
-
-  const currentProject = projects[projectIndex];
-  const currentImage = currentProject.images[imageIndex];
-
-  const nextImage = () => {
-    setImageIndex((prev) => (prev + 1) % currentProject.images.length);
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 3); 
   };
 
-  const prevImage = () => {
-    setImageIndex((prev) =>
-      prev === 0 ? currentProject.images.length - 1 : prev - 1
-    );
-  };
-
-  const nextProject = () => {
-    const newIndex = (projectIndex + 1) % projects.length;
-    setProjectIndex(newIndex);
-    setImageIndex(0);
-  };
-
-  const prevProject = () => {
-    const newIndex = projectIndex === 0 ? projects.length - 1 : projectIndex - 1;
-    setProjectIndex(newIndex);
-    setImageIndex(0);
-  };
+  const isAllVisible = visibleCount >= projects.length;
 
   return (
     <section
       id="projects"
-      className=" text-black dark:text-gray-500 px-4 md:px-12 mb-16"
+      className="px-4 py-10 -mt-4 text-black dark:text-gray-300"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Judul seluruh section */}
-        <h2 className="text-2xl font-bold mb-8 text-gray-700 dark:text-gray-300 bg-white/70 dark:bg-gray-900/70 px-4 py-2 rounded-lg shadow-md backdrop-blur-md inline-block">
+        <h2 className="inline-block px-4 py-2 mb-4 text-2xl font-bold text-gray-700 rounded-lg shadow-md bg-white/70 dark:bg-gray-900/70 backdrop-blur-md dark:text-gray-300">
           PROJECT SELECTED
         </h2>
 
-        {/* Container Project */}
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6 dark:text-gray-100">
-          {/* Kiri: Konten deskripsi + judul + role */}
-          <motion.div
-            key={projectIndex}
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 30 }}
-            transition={{ duration: 0.4 }}
-            className="flex-1 bg-white/60 dark:bg-gray-800/70 rounded-xl  backdrop-blur-sm p-6 shadow-xl"
-          >
-            <h3 className="text-md font-semibold text-black dark:text-white mb-2">
-              {currentProject.title}
-            </h3>
-            <p className="text-green-500 dark:text-[#12ED74]  mb-2">
-              {currentProject.role}
-            </p>
-            <p className="text-gray-700 dark:text-gray-100 mb-3 text-sm font-semibold">
-              {currentProject.deskripsi}
-            </p>
-            <p className="text-sm text-gray-800 dark:text-gray-300 mb-1">
-              <strong>Frontend Stack:</strong> {currentProject.frontend}
-            </p>
-            <p className="text-sm text-gray-800 dark:text-gray-300 mb-4">
-              <strong>Backend:</strong> {currentProject.backend}
-            </p>
+        {/* Grid Card */}
+        <div className="grid justify-center grid-cols-1 gap-8 p-4 text-gray-700 shadow-xl bg-white/40 rounded-xl dark:text-gray-100 dark:bg-gray-800/70 backdrop-blur-sm sm:grid-cols-2 lg:grid-cols-3">
+          {/* Deskripsi */}
+        <div className="mb-2 text-left sm:col-span-2 lg:col-span-3">
+          <p className="text-gray-800 dark:text-gray-200">
+            Beberapa proyek{" "}
+            <span className="font-semibold text-green-400">pilihan</span>{" "}
+            yang pernah saya{" "}
+            <span className="font-semibold text-green-400">kerjakan</span>.
+          </p>
+        </div>
+          {projects.slice(0, visibleCount).map((project, index) => (
+            <a
+              key={index}
+              href={project.url || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden transition-all duration-300 bg-white shadow-lg rounded-2xl dark:bg-gray-800 hover:shadow-2xl hover:-translate-y-2"
+            >
+              {/* Gambar */}
+              <div className="relative w-full h-48">
+                <Image
+                  src={project.images[0]}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
 
-            {/* Navigasi project */}
-            <div className="flex gap-4 mt-6 flex-wrap">
-              {projectIndex > 0 && (
-                <button
-                  onClick={prevProject}
-                  className="group relative flex items-center gap-1 sm:gap-2 px-3 sm:px-5 py-1.5 sm:py-2 text-sm sm:text-base rounded bg-green-500 text-white overflow-hidden transition-all duration-300 dark:bg-[#12ED74] hover:bg-green-600 hover:dark:bg-green-600"
-                >
-                  <span className="relative z-10 flex items-center gap-1 sm:gap-2">
-                    <FaArrowLeft className="text-sm sm:text-base" />
-                    <span>Back Project</span>
-                  </span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/60 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-move blur-sm brightness-125" />
-                </button>
-              )}
-              <button
-                onClick={nextProject}
-                className="group relative flex items-center gap-1 sm:gap-2 px-3 sm:px-5 py-1.5 sm:py-2 text-sm sm:text-base rounded bg-green-500 text-white overflow-hidden transition-all duration-300 dark:bg-[#12ED74] hover:bg-green-600 hover:dark:bg-green-600"
-              >
-                <span className="relative z-10 flex items-center gap-1 sm:gap-2">
-                  <span>Next Project</span>
-                  <FaArrowRight className="text-sm sm:text-base" />
+              {/* Konten Modern */}
+              <div className="flex flex-col gap-3 p-6">
+                <h3 className="text-lg font-bold text-gray-800 transition-colors duration-300 dark:text-white hover:text-green-800 hover:dark:text-cyan-50">
+                  {project.title}
+                </h3>
+                <span className="self-start px-3 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full dark:text-green-300 dark:bg-green-900/30">
+                  {project.role}
                 </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-black/20 via-green/80 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-move blur-sm brightness-125" />
+                <p className="min-h-[60px] text-sm text-gray-600 dark:text-gray-300 line-clamp-4">
+                  {project.deskripsi}
+                </p>
+                <div className="my-2 border-t border-gray-200 dark:border-gray-600"></div>
+                <div className="flex flex-col gap-1 text-sm">
+                  <p className="text-gray-700 dark:text-white">
+                    <strong className="text-gray-800 dark:text-gray-300">
+                      Frontend:
+                    </strong>{" "}
+                    <span className="text-gray-700 dark:text-cyan-50">
+                      {project.frontend}
+                    </span>
+                  </p>
+                  <p className="text-gray-700 dark:text-white">
+                    <strong className="text-gray-800 dark:text-gray-300">
+                      Backend:
+                    </strong>{" "}
+                    <span className="text-gray-700 dark:text-cyan-50">
+                      {project.backend}
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+          {!isAllVisible && (
+            <div className="flex justify-center mt-6">
+              <button
+                onClick={handleLoadMore}
+                className="relative px-6 py-3 overflow-hidden font-bold text-white rounded-lg shadow-lg cursor-pointer group animate-bounce-slow"
+              >
+                <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform -translate-x-1 -translate-y-1 bg-green-800 rounded-lg dark:bg-green-950 opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform translate-x-1 translate-y-1 bg-green-600 rounded-lg dark:bg-green-500 opacity-60 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
+                <span className="relative z-10">Show More</span>
+                <span className="absolute inset-0 bg-green-500 rounded-lg dark:bg-green-700 opacity-20 animate-pulse"></span>
               </button>
             </div>
-          </motion.div>
+          )}
 
-          {/* Kanan: Gambar */}
-          <div className="relative flex-1 max-w-[400px] w-full">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentImage}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.4 }}
-                className="w-full"
-              >
-                <Image
-                  src={currentImage}
-                  alt={currentProject.title}
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-2xl object-cover w-full hover:scale-[1.02] transition-transform duration-300 ease-in-out"
-                />
-              </motion.div>
-            </AnimatePresence>
-
-            {/* Tombol navigasi gambar */}
-            <button
-              onClick={prevImage}
-              className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full hover:bg-gray-700 hover:scale-110 transition cursor-pointer"
-              title="Previous Image"
-            >
-              <FaArrowLeft className="text-white" />
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[#12ED74]  p-2 rounded-full hover:bg-green-600 hover:scale-110 transition cursor-pointer"
-              title="Next Image"
-            >
-              <FaArrowRight className="text-white" />
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
-}  
+}

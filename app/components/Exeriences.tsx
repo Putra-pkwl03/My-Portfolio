@@ -14,12 +14,12 @@ interface ExperienceItem {
 
 const experience: ExperienceItem[] = [
   {
-    title: "InHack Copetition - Full Stack Developer",
-    company: "Telkom Purwokerto",
-    periode: "25-2-2023",
+    title: "Maganag - Web Developer",
+    company: "Sevenpion",
+    periode: "July 2025 - September 2025",
     deskripsi:
-      "Membangun Website untuk menyediakan informasi pariwisata yang ramah disabilitas, dengan fitur navigasi suara dan navigasi otomatis yang disesuaikan dengan kebutuhan pengguna disabilitas. Fitur Utama: Navigasi suara dan System Navigasi disabilitas otomatis",
-    tech: ["JavaScript", "Vite", "React", "PHP Native", "Bootstrap", "MySql"],
+      "Menerapkan desain responsif dan logika backend yang mengoptimalkan website untuk klien, menghasilkan peningkatan lalulintas permintaan dan meningkatkan waktu pengerjaan secara efisien. Mengembangkan solusi web untuk klien global termasuk pemerintahan, umkm, dan merek produk konsumen.",
+    tech: ["PHP", "Laravel", "React", "PHP Native", "Bootstrap", "MySql"],
   },
   {
     title: "Magang - Staff Web Developmen",
@@ -54,22 +54,22 @@ const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className=" text-black dark:text-gray-300  px-4 md:px-12 mb-16"
+      className="px-4 mb-16 text-black dark:text-gray-300 md:px-12"
     >
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl font-bold mb-8 text-gray-700 dark:text-gray-300 bg-white/70 dark:bg-gray-900/70 px-4 py-2 rounded-lg shadow-md backdrop-blur-md inline-block">
+        <h2 className="inline-block px-4 py-2 mb-8 text-2xl font-bold text-gray-700 rounded-lg shadow-md dark:text-gray-300 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md">
           Experience
         </h2>
 
         {/* Top section: text + svg on the left, experience on the right */}
         <div className="grid md:grid-cols-[1fr_2fr] gap-8 items-start">
           {/* Left Side: Title + Subtitle + SVG */}
-          <div className="relative space-y-15 rounded-md w-full p-4 bg-white/40 dark:bg-gray-900/70 backdrop-blur-md shadow-xl">
+          <div className="relative w-full p-4 rounded-md shadow-xl space-y-15 bg-white/40 dark:bg-gray-900/70 backdrop-blur-md">
             <div>
               <p className="text-xl font-semibold text-gray-800 dark:text-white">
                 Full Stack Developer
               </p>
-              <p className="text-sm text-green-600 dark:text-gray-400 font-semibold">
+              <p className="text-sm font-semibold text-green-600 dark:text-gray-400">
                 Code yang BAIK seperti Kopi dan Senja --
               </p>
               <p className="text-sm font-semibold text-green-600 dark:text-gray-400">
@@ -101,7 +101,7 @@ const ExperienceSection = () => {
           </div>
 
           {/* Right Side: Experience List */}
-          <div className="space-y-12 rounded-md w-full bg-white/40 p-4 dark:bg-gray-900/70 backdrop-blur-md shadow-xl">
+          <div className="w-full p-4 space-y-12 rounded-md shadow-xl bg-white/40 dark:bg-gray-900/70 backdrop-blur-md">
             {experience.map((item, index) => (
               <div key={index} className="flex gap-4">
                 {/* Kolom Tanggal */}
@@ -114,14 +114,14 @@ const ExperienceSection = () => {
                   <h3 className="text-lg font-semibold text-black dark:text-white">
                     {item.title} · {item.company}
                   </h3>
-                  <p className="text-gray-700 text-sm dark:text-gray-400">
+                  <p className="text-sm text-gray-700 dark:text-gray-400">
                     {item.deskripsi}
                   </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-2">
                     {item.tech.map((tech, i) => (
                       <span
                         key={i}
-                        className="bg-gray-800 text-white text-xs px-3 py-1 rounded-full"
+                        className="px-3 py-1 text-xs text-white bg-gray-800 rounded-full"
                       >
                         {tech}
                       </span>
@@ -131,7 +131,7 @@ const ExperienceSection = () => {
               </div>
             ))}
 
-            <div className="-mt-6 flex items-center">
+            <div className="flex items-center -mt-6">
                <a
     href="https://drive.google.com/drive/folders/1kX8_QhRLXFFXaT7DlNUCUzo1FgR4pWp1?usp=sharing"
     target="_blank"

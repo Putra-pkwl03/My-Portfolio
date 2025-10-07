@@ -13,6 +13,13 @@ interface CertificationItem {
 
 const certifications: CertificationItem[] = [
   {
+    image: "/img/sertif/10.jpg",
+    date: "2025",
+    title: "Junior Web Developer",
+    description: "Lulus Sertifikasi Pengembang web junior pertama",
+    institution: "Badan Nasional Sertifikasi Profesi (BNSP)",
+  },
+  {
     image: "/img/sertif/1.png",
     date: "25 Februari 2023",
     title: "InHack Competition",

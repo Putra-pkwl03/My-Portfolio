@@ -17,10 +17,10 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="text-black dark:text-gray-300 px-4 md:px-12"
+      className="px-4 text-black dark:text-gray-300 md:px-12 -mt-4"
     >
       {/* Mobile layout: horizontal */}
-      <div className="flex sm:hidden items-start">
+      <div className="flex items-start sm:hidden">
         {/* Gambar kiri */}
 
         <div className="relative w-full h-[350px] rounded overflow-hidden -mt-12 -ml-18">
@@ -37,12 +37,12 @@ export default function ContactSection() {
         {/* Form kanan */}
         <form
           onSubmit={handleSubmit}
-          className="w-2/2 space-y-3 bg-white/40 dark:bg-gray-900/70 backdrop-blur-md text-gray-800 dark:text-white p-4 rounded-xl shadow-md mt-23 -ml-18"
+          className="p-4 space-y-3 text-gray-800 shadow-md w-2/2 bg-white/40 dark:bg-gray-900/70 backdrop-blur-md dark:text-white rounded-xl mt-23 -ml-18"
         >
           <h2 className="text-lg font-bold">Contact Me</h2>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Your Name</label>
+            <label className="block mb-1 text-sm font-medium">Your Name</label>
             <input
               type="text"
               value={name}
@@ -54,7 +54,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Message</label>
+            <label className="block mb-1 text-sm font-medium">Message</label>
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -72,15 +72,15 @@ export default function ContactSection() {
             <span className="relative z-10 flex items-center gap-2">
               Send Via WhatsApp
             </span>
-            <span className="absolute inset-0 bg-gradient-to-r from-black/20 via-green/80 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-move blur-sm brightness-125" />
+            <span className="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-r from-black/20 via-green/80 to-white/20 group-hover:opacity-100 animate-gradient-move blur-sm brightness-125" />
           </button>
         </form>
       </div>
 
       {/* Desktop/tablet layout */}
-      <div className="hidden md:grid md:grid-cols-6 gap-12 items-center">
+      <div className="items-center hidden gap-12 md:grid md:grid-cols-6">
         {/* Gambar kiri */}
-        <div className="md:col-span-2 flex justify-start">
+        <div className="flex justify-start md:col-span-2">
         <div className="relative w-full h-[570px] rounded overflow-hidden  ">
           <Image
             src="/img/assets/c1.webp"
@@ -103,7 +103,7 @@ export default function ContactSection() {
           </h2>
 
           <div>
-            <label className="block text-gray-700 dark:text-gray-300 font-medium mb-1">
+            <label className="block mb-1 font-medium text-gray-700 dark:text-gray-300">
               Your Name
             </label>
             <input
@@ -111,13 +111,13 @@ export default function ContactSection() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full px-4 py-2 border-green-200 border rounded-md bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"
+              className="w-full px-4 py-2 text-gray-800 bg-gray-100 border border-green-200 rounded-md dark:bg-gray-700 dark:text-white"
               placeholder="Enter your name"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 dark:text-gray-300 font-medium mb-1">
+            <label className="block mb-1 font-medium text-gray-700 dark:text-gray-300">
               Message
             </label>
             <textarea
@@ -125,20 +125,25 @@ export default function ContactSection() {
               onChange={(e) => setMessage(e.target.value)}
               required
               rows={4}
-              className="w-full px-4 py-2 border-green-200 border rounded-md bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"
+              className="w-full px-4 py-2 text-gray-800 bg-gray-100 border border-green-200 rounded-md dark:bg-gray-700 dark:text-white"
               placeholder="Type your message"
             />
           </div>
 
           <button
             type="submit"
-            className="group relative flex items-center gap-2 px-5 py-2 rounded text-white transition-all bg-green-500 dark:bg-[#12ED74] hover:bg-green-600 hover:dark:bg-green-600 shadow-md"
+            className="relative px-6 py-3 overflow-hidden font-bold text-white rounded-lg shadow-lg cursor-pointer group"
           >
+            {/* Layered background effect */}
+            <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform -translate-x-1 -translate-y-1 bg-green-700 rounded-lg dark:bg-green-950 opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+            <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform translate-x-1 translate-y-1 bg-green-500 rounded-lg dark:bg-green-500 opacity-60 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
+
+            {/* Button text */}
             <span className="relative z-10 flex items-center gap-2">
               Send Via WhatsApp
             </span>
-            <span className="absolute inset-0 bg-gradient-to-r from-black/20 via-green/80 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-move blur-sm brightness-125" />
           </button>
+
         </form>
       </div>
     </section>
